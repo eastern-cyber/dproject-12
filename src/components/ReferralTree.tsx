@@ -35,7 +35,7 @@ const ReferralTree: React.FC<ReferralTreeProps> = ({ referrerId }) => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        'https://raw.githubusercontent.com/eastern-cyber/dproject-admin-1.0.1/main/public/dproject-users.json'
+        'https://raw.githubusercontent.com/eastern-cyber/dproject-admin-1.0.2/main/public/dproject-users.json'
       );
       const data: User[] = await res.json();
       setUsers(data);

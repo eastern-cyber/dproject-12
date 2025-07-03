@@ -25,7 +25,7 @@ export default function RefereePage() {
     const [users, setUsers] = useState<UserData[] | null>(null);
     const [loading, setLoading] = useState(true);
     const [referrerId, setReferrerId] = useState("");
-    const usersUrl = "https://raw.githubusercontent.com/eastern-cyber/dproject-admin-1.0.1/main/public/dproject-users.json";
+    const usersUrl = "https://raw.githubusercontent.com/eastern-cyber/dproject-admin-1.0.2/main/public/dproject-users.json";
 
     useEffect(() => {
         if (account?.address) {

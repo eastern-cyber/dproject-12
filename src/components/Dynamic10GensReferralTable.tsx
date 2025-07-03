@@ -20,7 +20,7 @@ const Dynamic10GensReferralTable: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          'https://raw.githubusercontent.com/eastern-cyber/dproject-admin-1.0.1/main/public/dproject-users.json'
+          'https://raw.githubusercontent.com/eastern-cyber/dproject-admin-1.0.2/main/public/dproject-users.json'
         );
         const data: User[] = await response.json();
         setUsers(data);
